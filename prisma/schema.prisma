@@ -1,0 +1,92 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator typegraphql {
+  provider = "typegraphql-prisma"
+  output   = "../src/generated/typegraphql-prisma"
+}
+
+model User {
+  id            String                 @id @default(uuid())
+  email         String                 @unique
+  username      String                 @unique
+  password      String
+  conversations UsersInConversations[]
+  Message       Message[]
+  posts         Post[]
+  profile       Profile?
+  upvotes       Upvote[]
+  followedBy    Follows[]              @relation("follower")
+  following     Follows[]              @relation("following")
+}
+
+model Profile {
+  id     String @id @default(uuid())
+  bio    String
+  user   User   @relation(fields: [userId], references: [id])
+  userId String @unique
+}
+
+model Follows {
+  follower    User   @relation("follower", fields: [followerId], references: [id])
+  followerId  String
+  following   User   @relation("following", fields: [followingId], references: [id])
+  followingId String
+
+  @@id([followerId, followingId])
+}
+
+model Conversation {
+  id           String                 @id @default(uuid())
+  createdAt    DateTime
+  participants UsersInConversations[]
+  messages     Message[]
+}
+
+model UsersInConversations {
+  conversation   Conversation @relation(fields: [conversationId], references: [id])
+  conversationId String       @map("conv_id")
+  user           User         @relation(fields: [userId], references: [id])
+  userId         String       @map("user_id")
+
+  @@id([userId, conversationId])
+}
+
+model Message {
+  id             Int          @id @default(autoincrement())
+  text           String
+  createdAt      DateTime
+  author         User         @relation(fields: [userId], references: [id])
+  conversation   Conversation @relation(fields: [conversationId], references: [id])
+  userId         String
+  conversationId String
+  read           Boolean @default(false)
+}
+
+model Post {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  title     String   @db.VarChar(255)
+  content   String
+  author    User     @relation(fields: [userId], references: [id])
+  userId    String
+  points    Int @default(0)
+  upvotes   Upvote[]
+}
+
+model Upvote {
+  value  Int
+  userId String @map("user_id")
+  postId String @map("post_id")
+  user   User   @relation(fields: [userId], references: [id])
+  post   Post   @relation(fields: [postId], references: [id])
+
+  @@id([userId, postId])
+}

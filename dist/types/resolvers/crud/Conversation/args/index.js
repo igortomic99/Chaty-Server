@@ -1,0 +1,28 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UpsertConversationArgs = exports.UpdateManyConversationArgs = exports.UpdateConversationArgs = exports.GroupByConversationArgs = exports.FindUniqueConversationArgs = exports.FindManyConversationArgs = exports.FindFirstConversationArgs = exports.DeleteManyConversationArgs = exports.DeleteConversationArgs = exports.CreateManyConversationArgs = exports.CreateConversationArgs = exports.AggregateConversationArgs = void 0;
+var AggregateConversationArgs_1 = require("./AggregateConversationArgs");
+Object.defineProperty(exports, "AggregateConversationArgs", { enumerable: true, get: function () { return AggregateConversationArgs_1.AggregateConversationArgs; } });
+var CreateConversationArgs_1 = require("./CreateConversationArgs");
+Object.defineProperty(exports, "CreateConversationArgs", { enumerable: true, get: function () { return CreateConversationArgs_1.CreateConversationArgs; } });
+var CreateManyConversationArgs_1 = require("./CreateManyConversationArgs");
+Object.defineProperty(exports, "CreateManyConversationArgs", { enumerable: true, get: function () { return CreateManyConversationArgs_1.CreateManyConversationArgs; } });
+var DeleteConversationArgs_1 = require("./DeleteConversationArgs");
+Object.defineProperty(exports, "DeleteConversationArgs", { enumerable: true, get: function () { return DeleteConversationArgs_1.DeleteConversationArgs; } });
+var DeleteManyConversationArgs_1 = require("./DeleteManyConversationArgs");
+Object.defineProperty(exports, "DeleteManyConversationArgs", { enumerable: true, get: function () { return DeleteManyConversationArgs_1.DeleteManyConversationArgs; } });
+var FindFirstConversationArgs_1 = require("./FindFirstConversationArgs");
+Object.defineProperty(exports, "FindFirstConversationArgs", { enumerable: true, get: function () { return FindFirstConversationArgs_1.FindFirstConversationArgs; } });
+var FindManyConversationArgs_1 = require("./FindManyConversationArgs");
+Object.defineProperty(exports, "FindManyConversationArgs", { enumerable: true, get: function () { return FindManyConversationArgs_1.FindManyConversationArgs; } });
+var FindUniqueConversationArgs_1 = require("./FindUniqueConversationArgs");
+Object.defineProperty(exports, "FindUniqueConversationArgs", { enumerable: true, get: function () { return FindUniqueConversationArgs_1.FindUniqueConversationArgs; } });
+var GroupByConversationArgs_1 = require("./GroupByConversationArgs");
+Object.defineProperty(exports, "GroupByConversationArgs", { enumerable: true, get: function () { return GroupByConversationArgs_1.GroupByConversationArgs; } });
+var UpdateConversationArgs_1 = require("./UpdateConversationArgs");
+Object.defineProperty(exports, "UpdateConversationArgs", { enumerable: true, get: function () { return UpdateConversationArgs_1.UpdateConversationArgs; } });
+var UpdateManyConversationArgs_1 = require("./UpdateManyConversationArgs");
+Object.defineProperty(exports, "UpdateManyConversationArgs", { enumerable: true, get: function () { return UpdateManyConversationArgs_1.UpdateManyConversationArgs; } });
+var UpsertConversationArgs_1 = require("./UpsertConversationArgs");
+Object.defineProperty(exports, "UpsertConversationArgs", { enumerable: true, get: function () { return UpsertConversationArgs_1.UpsertConversationArgs; } });
+//# sourceMappingURL=index.js.map

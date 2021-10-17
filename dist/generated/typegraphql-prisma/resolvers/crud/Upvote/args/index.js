@@ -1,0 +1,28 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UpsertUpvoteArgs = exports.UpdateUpvoteArgs = exports.UpdateManyUpvoteArgs = exports.GroupByUpvoteArgs = exports.FindUniqueUpvoteArgs = exports.FindManyUpvoteArgs = exports.FindFirstUpvoteArgs = exports.DeleteUpvoteArgs = exports.DeleteManyUpvoteArgs = exports.CreateUpvoteArgs = exports.CreateManyUpvoteArgs = exports.AggregateUpvoteArgs = void 0;
+var AggregateUpvoteArgs_1 = require("./AggregateUpvoteArgs");
+Object.defineProperty(exports, "AggregateUpvoteArgs", { enumerable: true, get: function () { return AggregateUpvoteArgs_1.AggregateUpvoteArgs; } });
+var CreateManyUpvoteArgs_1 = require("./CreateManyUpvoteArgs");
+Object.defineProperty(exports, "CreateManyUpvoteArgs", { enumerable: true, get: function () { return CreateManyUpvoteArgs_1.CreateManyUpvoteArgs; } });
+var CreateUpvoteArgs_1 = require("./CreateUpvoteArgs");
+Object.defineProperty(exports, "CreateUpvoteArgs", { enumerable: true, get: function () { return CreateUpvoteArgs_1.CreateUpvoteArgs; } });
+var DeleteManyUpvoteArgs_1 = require("./DeleteManyUpvoteArgs");
+Object.defineProperty(exports, "DeleteManyUpvoteArgs", { enumerable: true, get: function () { return DeleteManyUpvoteArgs_1.DeleteManyUpvoteArgs; } });
+var DeleteUpvoteArgs_1 = require("./DeleteUpvoteArgs");
+Object.defineProperty(exports, "DeleteUpvoteArgs", { enumerable: true, get: function () { return DeleteUpvoteArgs_1.DeleteUpvoteArgs; } });
+var FindFirstUpvoteArgs_1 = require("./FindFirstUpvoteArgs");
+Object.defineProperty(exports, "FindFirstUpvoteArgs", { enumerable: true, get: function () { return FindFirstUpvoteArgs_1.FindFirstUpvoteArgs; } });
+var FindManyUpvoteArgs_1 = require("./FindManyUpvoteArgs");
+Object.defineProperty(exports, "FindManyUpvoteArgs", { enumerable: true, get: function () { return FindManyUpvoteArgs_1.FindManyUpvoteArgs; } });
+var FindUniqueUpvoteArgs_1 = require("./FindUniqueUpvoteArgs");
+Object.defineProperty(exports, "FindUniqueUpvoteArgs", { enumerable: true, get: function () { return FindUniqueUpvoteArgs_1.FindUniqueUpvoteArgs; } });
+var GroupByUpvoteArgs_1 = require("./GroupByUpvoteArgs");
+Object.defineProperty(exports, "GroupByUpvoteArgs", { enumerable: true, get: function () { return GroupByUpvoteArgs_1.GroupByUpvoteArgs; } });
+var UpdateManyUpvoteArgs_1 = require("./UpdateManyUpvoteArgs");
+Object.defineProperty(exports, "UpdateManyUpvoteArgs", { enumerable: true, get: function () { return UpdateManyUpvoteArgs_1.UpdateManyUpvoteArgs; } });
+var UpdateUpvoteArgs_1 = require("./UpdateUpvoteArgs");
+Object.defineProperty(exports, "UpdateUpvoteArgs", { enumerable: true, get: function () { return UpdateUpvoteArgs_1.UpdateUpvoteArgs; } });
+var UpsertUpvoteArgs_1 = require("./UpsertUpvoteArgs");
+Object.defineProperty(exports, "UpsertUpvoteArgs", { enumerable: true, get: function () { return UpsertUpvoteArgs_1.UpsertUpvoteArgs; } });
+//# sourceMappingURL=index.js.map

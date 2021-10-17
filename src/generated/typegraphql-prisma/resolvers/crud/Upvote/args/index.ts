@@ -1,0 +1,12 @@
+export { AggregateUpvoteArgs } from "./AggregateUpvoteArgs";
+export { CreateManyUpvoteArgs } from "./CreateManyUpvoteArgs";
+export { CreateUpvoteArgs } from "./CreateUpvoteArgs";
+export { DeleteManyUpvoteArgs } from "./DeleteManyUpvoteArgs";
+export { DeleteUpvoteArgs } from "./DeleteUpvoteArgs";
+export { FindFirstUpvoteArgs } from "./FindFirstUpvoteArgs";
+export { FindManyUpvoteArgs } from "./FindManyUpvoteArgs";
+export { FindUniqueUpvoteArgs } from "./FindUniqueUpvoteArgs";
+export { GroupByUpvoteArgs } from "./GroupByUpvoteArgs";
+export { UpdateManyUpvoteArgs } from "./UpdateManyUpvoteArgs";
+export { UpdateUpvoteArgs } from "./UpdateUpvoteArgs";
+export { UpsertUpvoteArgs } from "./UpsertUpvoteArgs";

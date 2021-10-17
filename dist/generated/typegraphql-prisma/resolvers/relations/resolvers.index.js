@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UsersInConversationsRelationsResolver = exports.UserRelationsResolver = exports.UpvoteRelationsResolver = exports.ProfileRelationsResolver = exports.PostRelationsResolver = exports.MessageRelationsResolver = exports.FollowsRelationsResolver = exports.ConversationRelationsResolver = void 0;
+var ConversationRelationsResolver_1 = require("./Conversation/ConversationRelationsResolver");
+Object.defineProperty(exports, "ConversationRelationsResolver", { enumerable: true, get: function () { return ConversationRelationsResolver_1.ConversationRelationsResolver; } });
+var FollowsRelationsResolver_1 = require("./Follows/FollowsRelationsResolver");
+Object.defineProperty(exports, "FollowsRelationsResolver", { enumerable: true, get: function () { return FollowsRelationsResolver_1.FollowsRelationsResolver; } });
+var MessageRelationsResolver_1 = require("./Message/MessageRelationsResolver");
+Object.defineProperty(exports, "MessageRelationsResolver", { enumerable: true, get: function () { return MessageRelationsResolver_1.MessageRelationsResolver; } });
+var PostRelationsResolver_1 = require("./Post/PostRelationsResolver");
+Object.defineProperty(exports, "PostRelationsResolver", { enumerable: true, get: function () { return PostRelationsResolver_1.PostRelationsResolver; } });
+var ProfileRelationsResolver_1 = require("./Profile/ProfileRelationsResolver");
+Object.defineProperty(exports, "ProfileRelationsResolver", { enumerable: true, get: function () { return ProfileRelationsResolver_1.ProfileRelationsResolver; } });
+var UpvoteRelationsResolver_1 = require("./Upvote/UpvoteRelationsResolver");
+Object.defineProperty(exports, "UpvoteRelationsResolver", { enumerable: true, get: function () { return UpvoteRelationsResolver_1.UpvoteRelationsResolver; } });
+var UserRelationsResolver_1 = require("./User/UserRelationsResolver");
+Object.defineProperty(exports, "UserRelationsResolver", { enumerable: true, get: function () { return UserRelationsResolver_1.UserRelationsResolver; } });
+var UsersInConversationsRelationsResolver_1 = require("./UsersInConversations/UsersInConversationsRelationsResolver");
+Object.defineProperty(exports, "UsersInConversationsRelationsResolver", { enumerable: true, get: function () { return UsersInConversationsRelationsResolver_1.UsersInConversationsRelationsResolver; } });
+//# sourceMappingURL=resolvers.index.js.map
