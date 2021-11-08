@@ -36,7 +36,7 @@ const main = async () => {
       path: "/subscriptions",
     },
     plugins: [
-      ApolloServerPluginLandingPageGraphQLPlayground(),
+      //ApolloServerPluginLandingPageGraphQLPlayground(),
       /*{
         async serverWillStart() {
           return {
